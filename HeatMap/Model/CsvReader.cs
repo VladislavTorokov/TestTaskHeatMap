@@ -3,8 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows;
 
 namespace HeatMap.Model
 {
@@ -22,6 +21,7 @@ namespace HeatMap.Model
 
                 IFormatProvider formatter = new NumberFormatInfo { NumberDecimalSeparator = "." };
 
+                //Считывание значений с файла построчно 1 цикл - 1 строка
                 while (!tfp.EndOfData)
                 {
                     var doubleArray = tfp.ReadFields().Select(x => double.Parse(x, formatter)).ToArray();

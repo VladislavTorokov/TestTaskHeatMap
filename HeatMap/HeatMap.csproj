@@ -81,7 +81,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DelegateCommand.cs" />
+    <Compile Include="Model\ColorHeatMap.cs" />
     <Compile Include="Model\HeatMap.cs" />
+    <Compile Include="Services\DefaultDialogService.cs" />
+    <Compile Include="Services\IDialogService.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
